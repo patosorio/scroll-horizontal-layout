@@ -1,11 +1,6 @@
 
-
-html {
-    box-sizing: border-box;
-}
-
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body{
@@ -29,18 +24,31 @@ body{
     display: inline-block;
 }
 
-.scrolling-bar{
+#scrolling-bar{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     position: fixed;
     width: 100%;
     top: 0;
+    text-align: center;
+}
+
+.slideMenuButton{
+    display: inline-block;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 15px 0;
 }
 
 #scroller{
     height: 100%;
-    width: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    border-bottom: 4px solid black;
+    background-color: rgba(90,43,80,0.4);
 }
+
 
 .span{
     width: 1px;
