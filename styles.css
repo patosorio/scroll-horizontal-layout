@@ -1,0 +1,78 @@
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+#slider{
+    height: 100%;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.scrolling-bar{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#scroller{
+    height: 100%;
+    width: 0;
+}
+
+.span{
+    width: 1px;
+    height: 1px;
+    border-right: 1px solid white;
+}
+
+
+/* Medium and up screens */
+
+@media (min-width: 992px) { 
+    .container{
+        overflow-y: hidden;
+    }
+}
+
+.red{
+    background-color: red;
+}
+
+
+.blue{
+    background-color: blue;
+}
+
+
+.green{
+    background-color: green;
+}
+
+
+.yellow{
+    background-color: yellow;
+}
+
